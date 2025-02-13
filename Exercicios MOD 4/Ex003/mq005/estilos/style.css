@@ -21,6 +21,39 @@ padding: 10px;
 
 }
 
+menu > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    text-align: center;
+    border-top: 2px solid gray;
+}
+
+menu > ul > li > a:hover{
+    background-color: lightgray;
+}
+
+menu{
+    display: none;
+}
+
+#burger{
+    background-color: rgb(66, 66, 66);
+    width: 100vw;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#burger:hover{
+background-color: white;
+color: black;
+cursor: pointer;
+}
+
 
 main{
     background-color: white;
@@ -42,16 +75,34 @@ main> article > p{
    text-indent: 5px; 
 }
 
-menu > ul > li > a{
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    background-color: rgb(70, 70, 70);
-    color: white;
-    text-align: center;
-    border-top: 2px solid gray;
+@media screen and (min-width: 768px) {
+#burger{
+    display: none;
 }
 
-menu > ul > li > a:hover{
-    background-color: lightgray;
+menu{
+    display: block;
+    text-align: center;
+
+
+}
+
+menu > ul > li{
+    display: inline-block;
+    
+}
+
+main{
+width: 768px;
+
+}
+
+
+
+
+
+
+
+
+    
 }
